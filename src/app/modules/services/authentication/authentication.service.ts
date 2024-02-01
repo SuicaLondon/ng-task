@@ -29,21 +29,16 @@ export class AuthenticationService {
 
 	async login(username: string, password: string): Promise<boolean> {
 		try {
-			// TODO: Move to interceptor of axios
-			console.group('Login request')
 			this.token = await this.mockLoginRequest(username, password)
-			console.log('token: ', this.token)
 			if (!this.token) {
 				// TODO: Define class Error
 				throw 'Token is not exist'
 			}
 			localStorage.setItem(TOKEN_KEY, this.token)
-			console.groupEnd()
 			return true
 		} catch (error) {
 			// Log to Sentry
 			console.error(error)
-			console.groupEnd()
 			return false
 		}
 	}

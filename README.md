@@ -9,20 +9,31 @@ The project requires
 1. install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 2. install all dependencies by `yarn install`
 3. install [prettier](https://prettier.io/docs/en/install.html) to format the code automatically
+4. install [json-server](https://yarnpkg.com/package?name=json-server)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `yarn dev` for a json server dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
 £
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create Component
+
+```Shell
+ng generate component modules/components/ui-button  --style none
+```
+
+Create Page
+
+```Shell
+ng generate component page/login-page  --style none
+```

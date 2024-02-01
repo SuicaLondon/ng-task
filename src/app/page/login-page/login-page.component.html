@@ -1,0 +1,35 @@
+<div class="flex h-screen items-center justify-center">
+	<form
+		class="flex h-64 flex-col items-center justify-between rounded-lg border p-8 shadow-sm"
+		[formGroup]="loginForm"
+		(submit)="login()"
+	>
+		<h1 class="text-xl">Login</h1>
+
+		<label for="username" class="flex justify-between gap-4"
+			>Username
+			<input
+				id="username"
+				type="text"
+				formControlName="username"
+				class="rounded border"
+			/>
+		</label>
+		<label for="password" class="flex justify-between gap-4"
+			>Password
+			<input
+				id="password"
+				type="password"
+				formControlName="password"
+				class="rounded border"
+			/>
+		</label>
+
+		<p *ngIf="formValidationError" class="text-red-600">
+			{{ formValidationError }}
+		</p>
+		<app-ui-button class="w-full" [disabled]="isLoading" type="submit">
+			Login
+		</app-ui-button>
+	</form>
+</div>

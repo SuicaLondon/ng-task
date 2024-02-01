@@ -1,0 +1,10 @@
+<ng-container>
+	<button
+		class="w-full rounded border bg-blue-400 py-2 text-white hover:bg-blue-200"
+		type="{{ type }}"
+		[disabled]="disabled"
+		(click)="onClickButton($event)"
+	>
+		<ng-content></ng-content>
+	</button>
+</ng-container>
