@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "Suica",
+      "password": "Aa123456",
+      "token": "Token A",
+      "id": "77f7"
+    },
+    {
+      "username": "Penguin",
+      "password": "Aa123456",
+      "token": "Token B",
+      "id": "0ef4"
+    }
+  ]
+}
