@@ -20,14 +20,15 @@ Run `yarn dev` for running a JSON server and a dev server.
 | Dev Server  | 4200 |
 | JSON Server | 8000 |
 
+Afterward, you can visit localhost:4200 to utilize the login and logout features. The login form incorporates validation and token persistence functionalities.
+
 ## Build
 
-£
 Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn test` to execute the unit tests for AuthencationService
 
 ## Code scaffolding
 
@@ -50,3 +51,10 @@ Script to be run by the pipeline
 [Deploy to **DEV**](docs/deployment-dev.md)
 
 [Deploy to **PROD**](docs/deployment-prod.md)
+
+## Testing account
+
+| Username | Password |
+| -------- | -------- |
+| Suica    | Aa123456 |
+| Penguin  | Aa123456 |
