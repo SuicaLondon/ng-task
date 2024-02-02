@@ -13,7 +13,12 @@ The project requires
 
 ## Development server
 
-Run `yarn dev` for a json server dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `yarn dev` for running a JSON server and a dev server. 
+
+| Application | Port |
+| ----------- | ---- |
+| Dev Server  | 4200 |
+| JSON Server | 8000 |
 
 ## Build
 
@@ -37,3 +42,11 @@ Create Page
 ```Shell
 ng generate component page/login-page  --style none
 ```
+
+## Deployment
+
+Script to be run by the pipeline
+
+[Deploy to **DEV**](docs/deployment-dev.md)
+
+[Deploy to **PROD**](docs/deployment-prod.md)
